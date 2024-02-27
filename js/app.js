@@ -20,7 +20,7 @@ async function requester(body = {}) {
     const response = await fetch(API, {
       method: 'POST',
       headers: {
-        'X-Auth': 'password',
+        'X-Auth': password,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
