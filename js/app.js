@@ -1,7 +1,7 @@
 const wrapper = document.querySelector('.wrapper');
 
 
-const API = 'http://api.valantis.store:40000/';
+const API = 'https://api.valantis.store:41000/';
 const ENDPOINTS = {
   ids: 'get_ids',
   items: 'get_items',
