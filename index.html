@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+      
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="wrapper container-lg">
+      <h1>Возможно ваш сервер не проксируется и поэтому запрос будет идти долго (лучше при загрузке не использовать фильтр)</h1>
+      <div class="filter">
+        <label>
+          Филтровать: 
+          <select id="filter">
+            <option value="">----------</option>
+            <option value="product">По названию</option>
+            <option value="price">По цене</option>
+            <option value="brand">По бренду</option>
+          </select>
+        </label>
+        <form id="search-form">
+          <input type="text" id="search" hidden/>
+          <input type="submit" id="submit" value="Искать" hidden>
+        </form>
+      </div>
+
+      <ul class="items"></ul>
+      <ul class="pagination"></ul>
+    </main>
+  </body>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+  <script src="js/utils/filter.js"></script>
+  <script src="js/utils/loading.js"></script>
+  <script src="js/utils/pagination.js"></script>
+  <script src="js/app.js"></script>
+
+</html>
